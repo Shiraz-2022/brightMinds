@@ -75,20 +75,22 @@ function_map = {0: lambda x, y: letter_check(x, y),
                 2: lambda x, y: sentence_check(x, y)
                 }
 
-def main(image_path, expected_text):
-    option = int(input('Select the type of question:'))
-
-    letter = input('Enter the text:')
+def main(image_path, expected_text, option):
     extracted_text = extract_handwriting(image_path)
     final_text = preprocess_text(extracted_text)
 
+    accuracy = function_map[option](final_text, expected_text)
+    print(f'The accuracy is {accuracy}')
 
     print("Extracted Handwriting Text:\n", final_text)
     return final_text
 
 """---------------------"""
 
-# Example usage
+
 if __name__ == "__main__":
-    main("D:\\Sample Projects\\brightMinds\\ML\\Models\\metadata\\Image4.jpg")
+    option = int(input('Select the type of question:'))
+    expected_text = input('Enter the text:')
+    image_path = "D:\\Sample Projects\\brightMinds\\ML\\Models\\metadata\\sentence.jpg"
+    main(image_path, expected_text, option)
 
