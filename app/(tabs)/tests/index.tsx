@@ -6,28 +6,47 @@ import { Href, router } from "expo-router";
 import { imagePath } from "@/constants/ImagePath";
 
 //services
-import { getReadingData } from "@/services/getReadingData";
+import {
+  getReadingData,
+  ReadingQuestion,
+  ReadingQuestionData,
+} from "@/services/getReadingData";
 
 //components
 import WideTwoButton from "@/components/buttons/WideTwoButton";
 import LeftStripe from "@/components/stripes/LeftStripe";
 import RightStripe from "@/components/stripes/RightStripe";
 import Loader from "@/components/Loader";
+import { mapTypeToRoute } from "@/constants/mapTypeToRoute";
 
 export default function index() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const getReadingDataCp = async (link: Href<string | object>) => {
+  const getReadingDataCp = async () => {
     setIsLoading(true);
     try {
-      const data = await getReadingData();
-      console.log("reading data", data);
+      const data: ReadingQuestionData | undefined = await getReadingData();
+      if (!data) return;
 
-      if (data) {
-        router.navigate("/reading/outLoud");
-      }
+      const newRoutes =
+        data &&
+        data.questions.reduce((acc: string[], item: ReadingQuestion) => {
+          if (item && item.type in mapTypeToRoute) {
+            acc.push(mapTypeToRoute[item.type]);
+          }
+          return acc;
+        }, []);
+
+      router.navigate({
+        pathname: newRoutes[0] as Href<string | object>,
+        params: {
+          routes: JSON.stringify(newRoutes),
+          current: Number(0),
+          data: JSON.stringify(data),
+        },
+      });
     } catch (error) {
-      console.log("error", error);
+      console.error("Error fetching reading data:", error);
     } finally {
       setIsLoading(false);
     }
@@ -41,13 +60,13 @@ export default function index() {
       <View className="my-auto">
         <View className="mb-5">
           <WideTwoButton
-            link="/reading/outLoud"
+            // link="/reading/outLoud"
             text="Reading"
             image={imagePath.reading}
             bgColor
             textColor
             press
-            apiFunction={(link) => getReadingDataCp(link)}
+            apiFunction={getReadingDataCp}
           />
         </View>
         <View className="mb-5">

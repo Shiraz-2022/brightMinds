@@ -18,7 +18,7 @@ export default function Learning1() {
       </View>
       <View className="mx-5 flex flex-row justify-between items-center mt-20">
         <View className="w-12 h-0.5 bg-lightBrown" />
-        <Text className="text-lightBrown font-odRegular">section heading</Text>
+        <Text className="text-lightBrown font-odRegular">Lets' Go</Text>
         <View className="w-12 h-0.5 bg-lightBrown" />
       </View>
     </View>

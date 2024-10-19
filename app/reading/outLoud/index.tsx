@@ -1,6 +1,6 @@
 import { View, Text, Image, Pressable } from "react-native";
 import { useSelector } from "react-redux";
-import { Link } from "expo-router";
+import { useLocalSearchParams } from "expo-router";
 
 //components
 import LeftStripe from "@/components/stripes/LeftStripe";
@@ -16,8 +16,24 @@ import { selectMic } from "@/redux/slices/micSlice";
 import TextBox from "@/components/texts/TextBox";
 import Cross from "@/components/Cross";
 
+//services
+import {
+  ReadingQuestionData,
+  ParagraphPronunciationContent,
+} from "@/services/getReadingData";
+
 export default function OutLoud() {
   const isMicOn = useSelector(selectMic);
+  const {
+    routes: routesParam,
+    current,
+    data: dataParam,
+  } = useLocalSearchParams();
+  const routes = JSON.parse(routesParam as string);
+  const data: ReadingQuestionData = JSON.parse(dataParam as string);
+
+  const paraData: ParagraphPronunciationContent =
+    data.questions[Number(current)].content;
 
   return (
     <View className="bg-darkBrown h-full w-full py-16 px-10">
@@ -28,16 +44,15 @@ export default function OutLoud() {
         Read the passage out loud
       </Text>
       <TextBox
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit
-        iaculis lacus, a placerat orci lacinia quis. Integer ac sollicitudin
-        risus, at aliquet massa. Curabitur dapibus at tortor et ullamcorper.
-        Nulla scelerisque quis magna nec lobortis. Vestibulum magna orci."
+        text={paraData.paragraph}
         highlight={["hey", "Vestibulum", "Lorem"]}
       />
       <View className="mx-auto my-10">
         <Mic />
       </View>
-      {!isMicOn && <Submit link="reading/silent" />}
+      {!isMicOn && (
+        <Submit routes={routes} current={Number(current)} data={data} />
+      )}
     </View>
   );
 }

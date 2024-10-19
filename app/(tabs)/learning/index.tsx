@@ -4,7 +4,7 @@ import React from "react";
 //constants
 
 //components
-// import TopBar from "@/components/TopBar";
+import TopBar from "@/components/TopBar";
 import LeftStripe from "@/components/stripes/LeftStripe";
 import RightStripe from "@/components/stripes/RightStripe";
 import Learning1 from "@/components/learning/Learning1";
@@ -15,7 +15,7 @@ export default function index() {
     <View className="bg-darkBrown w-full h-full">
       <LeftStripe rotate light />
       <RightStripe rotate light />
-      {/* <TopBar /> */}
+      <TopBar />
       <ScrollView>
         <Learning1 />
         <Learning2 />
