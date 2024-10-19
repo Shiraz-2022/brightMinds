@@ -1,0 +1,56 @@
+{
+    "id": "R4",
+    "levels": {
+        "level_1": [
+            {
+                "question": "Identify the common nouns in the following sentence: 'The cat sat on the mat.'",
+                "correct_answer": "cat, mat",
+                "level": 1
+            },
+            {
+                "question": "Which of the following is a proper noun? 'city, Paris, car'",
+                "correct_answer": "Paris",
+                "level": 1
+            },
+            {
+                "question": "Find the common nouns: 'The dog barked at the man.'",
+                "correct_answer": "dog, man",
+                "level": 1
+            }
+        ],
+        "level_2": [
+            {
+                "question": "Identify the proper nouns in the following sentence: 'Alice went to London for her vacation.'",
+                "correct_answer": "Alice, London",
+                "level": 2
+            },
+            {
+                "question": "What type of noun is 'happiness'?",
+                "correct_answer": "Abstract noun",
+                "level": 2
+            },
+            {
+                "question": "Classify the nouns: 'The team won the championship.'",
+                "correct_answer": "team (collective noun), championship (common noun)",
+                "level": 2
+            }
+        ],
+        "level_3": [
+            {
+                "question": "In the sentence, 'The committee decided to change the rules,' identify the collective noun.",
+                "correct_answer": "committee",
+                "level": 3
+            },
+            {
+                "question": "Identify the abstract nouns in the following sentence: 'Freedom and justice are essential values.'",
+                "correct_answer": "Freedom, justice",
+                "level": 3
+            },
+            {
+                "question": "Classify the nouns in this sentence: 'New York is a bustling city with a rich history.'",
+                "correct_answer": "New York (proper noun), city (common noun), history (abstract noun)",
+                "level": 3
+            }
+        ]
+    }
+}

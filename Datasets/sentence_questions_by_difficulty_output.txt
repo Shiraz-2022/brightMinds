@@ -1,0 +1,411 @@
+{
+    "id": "R2",
+    "levels": {
+        "level_1": [
+            {
+                "level": 1,
+                "sentence": "The cat is black.",
+                "prompt": "Identify the sentence shown: 'The cat is black.'",
+                "correct_answer": "The cat is black.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The cat is black.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The cat is black.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "The dog runs fast.",
+                "prompt": "Identify the sentence shown: 'The dog runs fast.'",
+                "correct_answer": "The dog runs fast.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The dog runs fast.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The dog runs fast.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "I see a ball.",
+                "prompt": "Identify the sentence shown: 'I see a ball.'",
+                "correct_answer": "I see a ball.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'I see a ball.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'I see a ball.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "She has a red hat.",
+                "prompt": "Identify the sentence shown: 'She has a red hat.'",
+                "correct_answer": "She has a red hat.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'She has a red hat.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'She has a red hat.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "He jumps high.",
+                "prompt": "Identify the sentence shown: 'He jumps high.'",
+                "correct_answer": "He jumps high.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'He jumps high.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'He jumps high.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "The sun is bright.",
+                "prompt": "Identify the sentence shown: 'The sun is bright.'",
+                "correct_answer": "The sun is bright.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The sun is bright.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The sun is bright.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "A bird is singing.",
+                "prompt": "Identify the sentence shown: 'A bird is singing.'",
+                "correct_answer": "A bird is singing.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'A bird is singing.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'A bird is singing.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "It is a sunny day.",
+                "prompt": "Identify the sentence shown: 'It is a sunny day.'",
+                "correct_answer": "It is a sunny day.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'It is a sunny day.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'It is a sunny day.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "The boy is happy.",
+                "prompt": "Identify the sentence shown: 'The boy is happy.'",
+                "correct_answer": "The boy is happy.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The boy is happy.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The boy is happy.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "I love my pet.",
+                "prompt": "Identify the sentence shown: 'I love my pet.'",
+                "correct_answer": "I love my pet.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'I love my pet.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'I love my pet.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "The zib is frobbing.",
+                "prompt": "Identify the sentence shown: 'The zib is frobbing.'",
+                "correct_answer": "The zib is frobbing.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The zib is frobbing.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The zib is frobbing.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "A flobble danced yesterday.",
+                "prompt": "Identify the sentence shown: 'A flobble danced yesterday.'",
+                "correct_answer": "A flobble danced yesterday.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'A flobble danced yesterday.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'A flobble danced yesterday.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "The qub flies high.",
+                "prompt": "Identify the sentence shown: 'The qub flies high.'",
+                "correct_answer": "The qub flies high.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The qub flies high.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The qub flies high.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "The gorp is green.",
+                "prompt": "Identify the sentence shown: 'The gorp is green.'",
+                "correct_answer": "The gorp is green.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The gorp is green.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The gorp is green.'. Let's try again."
+                }
+            },
+            {
+                "level": 1,
+                "sentence": "He saw a flimble.",
+                "prompt": "Identify the sentence shown: 'He saw a flimble.'",
+                "correct_answer": "He saw a flimble.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'He saw a flimble.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'He saw a flimble.'. Let's try again."
+                }
+            }
+        ],
+        "level_2": [
+            {
+                "level": 2,
+                "sentence": "The apple is on the table and is very red.",
+                "prompt": "Identify the sentence shown: 'The apple is on the table and is very red.'",
+                "correct_answer": "The apple is on the table and is very red.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The apple is on the table and is very red.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The apple is on the table and is very red.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "She is reading a book in the quiet library.",
+                "prompt": "Identify the sentence shown: 'She is reading a book in the quiet library.'",
+                "correct_answer": "She is reading a book in the quiet library.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'She is reading a book in the quiet library.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'She is reading a book in the quiet library.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "The boy kicks the ball and scores a goal.",
+                "prompt": "Identify the sentence shown: 'The boy kicks the ball and scores a goal.'",
+                "correct_answer": "The boy kicks the ball and scores a goal.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The boy kicks the ball and scores a goal.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The boy kicks the ball and scores a goal.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "He enjoys playing soccer every Saturday morning.",
+                "prompt": "Identify the sentence shown: 'He enjoys playing soccer every Saturday morning.'",
+                "correct_answer": "He enjoys playing soccer every Saturday morning.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'He enjoys playing soccer every Saturday morning.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'He enjoys playing soccer every Saturday morning.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "The dog barks loudly at night when it hears noises.",
+                "prompt": "Identify the sentence shown: 'The dog barks loudly at night when it hears noises.'",
+                "correct_answer": "The dog barks loudly at night when it hears noises.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The dog barks loudly at night when it hears noises.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The dog barks loudly at night when it hears noises.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "The flower blooms in spring and attracts many bees.",
+                "prompt": "Identify the sentence shown: 'The flower blooms in spring and attracts many bees.'",
+                "correct_answer": "The flower blooms in spring and attracts many bees.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The flower blooms in spring and attracts many bees.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The flower blooms in spring and attracts many bees.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "They went to the park yesterday and had a picnic.",
+                "prompt": "Identify the sentence shown: 'They went to the park yesterday and had a picnic.'",
+                "correct_answer": "They went to the park yesterday and had a picnic.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'They went to the park yesterday and had a picnic.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'They went to the park yesterday and had a picnic.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "I will visit my friend tomorrow and we will play games.",
+                "prompt": "Identify the sentence shown: 'I will visit my friend tomorrow and we will play games.'",
+                "correct_answer": "I will visit my friend tomorrow and we will play games.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'I will visit my friend tomorrow and we will play games.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'I will visit my friend tomorrow and we will play games.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "The train travels at high speed through the countryside.",
+                "prompt": "Identify the sentence shown: 'The train travels at high speed through the countryside.'",
+                "correct_answer": "The train travels at high speed through the countryside.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The train travels at high speed through the countryside.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The train travels at high speed through the countryside.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "We are having pizza for dinner tonight and it smells delicious.",
+                "prompt": "Identify the sentence shown: 'We are having pizza for dinner tonight and it smells delicious.'",
+                "correct_answer": "We are having pizza for dinner tonight and it smells delicious.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'We are having pizza for dinner tonight and it smells delicious.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'We are having pizza for dinner tonight and it smells delicious.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "The snorf glibbled in the park under the purple sky.",
+                "prompt": "Identify the sentence shown: 'The snorf glibbled in the park under the purple sky.'",
+                "correct_answer": "The snorf glibbled in the park under the purple sky.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The snorf glibbled in the park under the purple sky.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The snorf glibbled in the park under the purple sky.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "A jibble took a nap on a fluffy cloud.",
+                "prompt": "Identify the sentence shown: 'A jibble took a nap on a fluffy cloud.'",
+                "correct_answer": "A jibble took a nap on a fluffy cloud.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'A jibble took a nap on a fluffy cloud.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'A jibble took a nap on a fluffy cloud.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "The blimby ran around the room while singing.",
+                "prompt": "Identify the sentence shown: 'The blimby ran around the room while singing.'",
+                "correct_answer": "The blimby ran around the room while singing.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The blimby ran around the room while singing.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The blimby ran around the room while singing.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "The slorp is jumping high over the golden fence.",
+                "prompt": "Identify the sentence shown: 'The slorp is jumping high over the golden fence.'",
+                "correct_answer": "The slorp is jumping high over the golden fence.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The slorp is jumping high over the golden fence.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The slorp is jumping high over the golden fence.'. Let's try again."
+                }
+            },
+            {
+                "level": 2,
+                "sentence": "A quabble danced in the rain while wearing shoes.",
+                "prompt": "Identify the sentence shown: 'A quabble danced in the rain while wearing shoes.'",
+                "correct_answer": "A quabble danced in the rain while wearing shoes.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'A quabble danced in the rain while wearing shoes.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'A quabble danced in the rain while wearing shoes.'. Let's try again."
+                }
+            }
+        ],
+        "level_3": [
+            {
+                "level": 3,
+                "sentence": "The caterpillar crawled slowly across the large green leaf while the sun shone brightly in the sky.",
+                "prompt": "Identify the sentence shown: 'The caterpillar crawled slowly across the large green leaf while the sun shone brightly in the sky.'",
+                "correct_answer": "The caterpillar crawled slowly across the large green leaf while the sun shone brightly in the sky.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The caterpillar crawled slowly across the large green leaf while the sun shone brightly in the sky.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The caterpillar crawled slowly across the large green leaf while the sun shone brightly in the sky.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "She quickly finished her homework before dinner and then watched her favorite show.",
+                "prompt": "Identify the sentence shown: 'She quickly finished her homework before dinner and then watched her favorite show.'",
+                "correct_answer": "She quickly finished her homework before dinner and then watched her favorite show.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'She quickly finished her homework before dinner and then watched her favorite show.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'She quickly finished her homework before dinner and then watched her favorite show.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "The clouds gathered ominously, signaling an approaching storm that would change the weather.",
+                "prompt": "Identify the sentence shown: 'The clouds gathered ominously, signaling an approaching storm that would change the weather.'",
+                "correct_answer": "The clouds gathered ominously, signaling an approaching storm that would change the weather.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The clouds gathered ominously, signaling an approaching storm that would change the weather.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The clouds gathered ominously, signaling an approaching storm that would change the weather.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "He thought carefully about his plans for the upcoming vacation and decided to visit the mountains.",
+                "prompt": "Identify the sentence shown: 'He thought carefully about his plans for the upcoming vacation and decided to visit the mountains.'",
+                "correct_answer": "He thought carefully about his plans for the upcoming vacation and decided to visit the mountains.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'He thought carefully about his plans for the upcoming vacation and decided to visit the mountains.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'He thought carefully about his plans for the upcoming vacation and decided to visit the mountains.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "The children played outside until the sun went down, laughing and enjoying their time together.",
+                "prompt": "Identify the sentence shown: 'The children played outside until the sun went down, laughing and enjoying their time together.'",
+                "correct_answer": "The children played outside until the sun went down, laughing and enjoying their time together.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The children played outside until the sun went down, laughing and enjoying their time together.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The children played outside until the sun went down, laughing and enjoying their time together.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "The flibberty flomped over the hill while singing a silly song about flying bananas.",
+                "prompt": "Identify the sentence shown: 'The flibberty flomped over the hill while singing a silly song about flying bananas.'",
+                "correct_answer": "The flibberty flomped over the hill while singing a silly song about flying bananas.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The flibberty flomped over the hill while singing a silly song about flying bananas.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The flibberty flomped over the hill while singing a silly song about flying bananas.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "A snarfblat danced in the moonlight, twirling around in a world of dreams.",
+                "prompt": "Identify the sentence shown: 'A snarfblat danced in the moonlight, twirling around in a world of dreams.'",
+                "correct_answer": "A snarfblat danced in the moonlight, twirling around in a world of dreams.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'A snarfblat danced in the moonlight, twirling around in a world of dreams.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'A snarfblat danced in the moonlight, twirling around in a world of dreams.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "The gorp flew high above the trees, dodging colorful birds and fluffy clouds.",
+                "prompt": "Identify the sentence shown: 'The gorp flew high above the trees, dodging colorful birds and fluffy clouds.'",
+                "correct_answer": "The gorp flew high above the trees, dodging colorful birds and fluffy clouds.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The gorp flew high above the trees, dodging colorful birds and fluffy clouds.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The gorp flew high above the trees, dodging colorful birds and fluffy clouds.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "The jibble whispered secrets to the wind, hoping it would carry them far away.",
+                "prompt": "Identify the sentence shown: 'The jibble whispered secrets to the wind, hoping it would carry them far away.'",
+                "correct_answer": "The jibble whispered secrets to the wind, hoping it would carry them far away.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The jibble whispered secrets to the wind, hoping it would carry them far away.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The jibble whispered secrets to the wind, hoping it would carry them far away.'. Let's try again."
+                }
+            },
+            {
+                "level": 3,
+                "sentence": "The globber bubbled quietly in the corner, pondering its place in the universe.",
+                "prompt": "Identify the sentence shown: 'The globber bubbled quietly in the corner, pondering its place in the universe.'",
+                "correct_answer": "The globber bubbled quietly in the corner, pondering its place in the universe.",
+                "feedback": {
+                    "correct": "Great job! You identified the sentence: 'The globber bubbled quietly in the corner, pondering its place in the universe.'.",
+                    "incorrect": "Oops! That\u2019s the sentence: 'The globber bubbled quietly in the corner, pondering its place in the universe.'. Let's try again."
+                }
+            }
+        ]
+    }
+}
