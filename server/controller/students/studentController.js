@@ -5,14 +5,7 @@ const fs = require('fs');
 
 const FLASK_SERVER_URL = process.env.FLASK_SERVER_URL;
 
-exports.getQuestion = async (req, res) => {
-    try {
-        const { data } = await axios.get(`${FLASK_SERVER_URL}/get-question`);
-        res.json(data);
-    } catch (error) {
-        res.status(500).send(error.toString());
-    }
-};
+
 
 exports.submitQuestion = async (req, res) => {
     if (!req.files || Object.keys(req.files).length === 0) {
@@ -48,12 +41,16 @@ exports.getAudioAnswer = async (req, res) => {
     form.append('audio', fs.createReadStream(audioFile.tempFilePath));
 
     try {
-        const response = await axios.post(`${FLASK_SERVER_URL}/process-audio`, form, {
+        const googleResponse = await axios.post(`https://api.google.com/some-audio-processing-endpoint`, form, {
             headers: {
                 ...form.getHeaders(),
             },
         });
-        res.send(response.data);
+        if (googleResponse.data.correct) {
+            res.json({ success: true, message: 'Correct answer!' });
+        } else {
+            res.json({ success: false, message: 'Wrong answer, try again!' });
+        }
     } catch (error) {
         res.status(500).send(error.toString());
     }
