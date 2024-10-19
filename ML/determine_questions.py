@@ -10,14 +10,14 @@ def determine_questions_per_topic(mastery_scores):
         
         if mastery < 0.4:  # Low mastery
             questions_per_topic[topic]['Level 1'] = np.random.randint(1, 6)  # 1 to 5 easy questions
-            questions_per_topic[topic]['Level 2'] = np.random.randint(0, 4)   # 0 to 3 medium questions
+            questions_per_topic[topic]['Level 2'] = np.random.randint(0, 7-questions_per_topic[topic]['Level 1'])   # 0 to 3 medium questions
         elif 0.4 <= mastery < 0.7:  # Medium mastery
             questions_per_topic[topic]['Level 1'] = np.random.randint(1, 4)  # 1 to 3 easy questions
-            questions_per_topic[topic]['Level 2'] = np.random.randint(2, 5)  # 2 to 4 medium questions
-            questions_per_topic[topic]['Level 3'] = np.random.randint(0, 3)  # 0 to 2 hard questions
+            questions_per_topic[topic]['Level 2'] = np.random.randint(1, 7-questions_per_topic[topic]['Level 1'])  # 2 to 4 medium questions
+            questions_per_topic[topic]['Level 3'] = np.random.randint(0, 7-questions_per_topic[topic]['Level 1']-questions_per_topic[topic]['Level 2'])  # 0 to 2 hard questions
         else:  # High mastery
-            questions_per_topic[topic]['Level 2'] = np.random.randint(1, 3)  # 1 to 3 medium questions
-            questions_per_topic[topic]['Level 3'] = np.random.randint(2, 4)  # 2 to 3 hard questions
+            questions_per_topic[topic]['Level 2'] = np.random.randint(1, 5)  # 1 to 3 medium questions
+            questions_per_topic[topic]['Level 3'] = np.random.randint(2, 7-questions_per_topic[topic]['Level 2'])  # 2 to 3 hard questions
 
     return questions_per_topic
 
