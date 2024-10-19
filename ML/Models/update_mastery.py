@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
-from tensorflow import keras
+import keras
 # from tensorflow.keras import layers
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 import joblib
@@ -72,9 +72,9 @@ read_type_map = {'Letter Reading': 'R1', 'Word Reading': 'R2', 'Short Passage Re
 # Function to load the model and predict
 def predict_new_mastery(new_data):
     # Load the saved model
-    loaded_model = keras.models.load_model('C:\\Users\\LENOVO\\OneDrive\Desktop\\brightMinds\\ML\\Models\\mastery_model.h5')
+    loaded_model = keras.models.load_model('D:\\Sample Projects\\brightMinds\\ML\\Models\\mastery_model.h5')
     # Load the saved ColumnTransformer
-    loaded_ct = joblib.load('C:\\Users\\LENOVO\\OneDrive\\Desktop\\brightMinds\\ML\\Models\\column_transformer.pkl')
+    loaded_ct = joblib.load('D:\\Sample Projects\\brightMinds\\ML\\Models\column_transformer.pkl')
 
     # Convert new data to DataFrame
     input_df = pd.DataFrame(new_data)
