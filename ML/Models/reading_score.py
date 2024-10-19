@@ -45,21 +45,15 @@ def synthesize_text(text, output_wav_path):
     audio.export(output_wav_path, format="wav")
     print(f'WAV file saved at {output_wav_path}')
 
-# Example usage
-if __name__ == "__main__":
-    text = "hello"  # Input text for TTS
-    output_wav_path = "test_word.wav"  # Path to save the WAV file
-    synthesize_text(text, output_wav_path)
+# MAIN FUNCTION:
 
-    audio1_path = "test_word.wav"
-    audio2_path = "user_word.wav"
-
+def compare_audio_similarity(audio1_path, audio2_path):  # to be used while calling
     audio1, sr1 = librosa.load(audio1_path)
     audio2, sr2 = librosa.load(audio2_path)
 
     # Step 2: Extract MFCC features from both audios
-    mfcc1 = librosa.feature.mfcc(y=audio1, sr=sr1, n_mfcc=13)  # Extract 13 MFCC coefficients for audio1
-    mfcc2 = librosa.feature.mfcc(y=audio2, sr=sr2, n_mfcc=13)  # Extract 13 MFCC coefficients for audio2
+    mfcc1 = librosa.feature.mfcc(y=audio1, sr=sr1, n_mfcc=5)  # Extract 13 MFCC coefficients for audio1
+    mfcc2 = librosa.feature.mfcc(y=audio2, sr=sr2, n_mfcc=5)  # Extract 13 MFCC coefficients for audio2
 
     max_len = max(mfcc1.shape[1], mfcc2.shape[1])
 
@@ -74,9 +68,19 @@ if __name__ == "__main__":
     cosine_sim = cosine_similarity([mfcc1_flat], [mfcc2_flat])[0][0]
     print(f"Cosine Similarity (padded): {cosine_sim}")
 
-    cosine_sim = cosine_similarity([mfcc1_flat], [mfcc2_flat])[0][0]
-    print(f"Cosine Similarity: {cosine_sim}")
+    # Dynamic Time Warping (DTW) for time-series comparison
+    # distance, path = fastdtw(mfcc1.T, mfcc2.T, dist=euclidean)
+    # print(f"DTW Distance: {distance}")
 
-    # 2. Dynamic Time Warping (DTW) for time-series comparison
-    distance, path = fastdtw(mfcc1.T, mfcc2.T, dist=euclidean)
-    print(f"DTW Distance: {distance}")
+    return f"{cosine_sim:.4f}"
+
+# Example usage
+# if __name__ == "__main__":
+#     text = "hello"  # Input text for TTS
+#     output_wav_path = "test_word.wav"  # Path to save the WAV file
+#     synthesize_text(text, output_wav_path)
+
+#     audio1_path = "test_word.wav"
+#     audio2_path = "user_word.wav"
+
+#     compare_audio_similarity(audio1_path, audio2_path)
