@@ -85,10 +85,10 @@ def predict_new_mastery(new_data):
 
     # Transform input data
     X_input = input_df[['Age', 'Topic', 'Difficulty', 'Accuracy', 'Number of Questions', 'Previous Mastery Score']]
-    print(X_input)
+    # print(X_input)
     X_input_transformed = pd.DataFrame(loaded_ct.transform(X_input), columns=loaded_ct.get_feature_names_out(), index=X_input.index)
 
-    print(X_input_transformed)
+    # print(X_input_transformed)
     # Generate predictions
     predictions = loaded_model.predict(X_input_transformed)
 
