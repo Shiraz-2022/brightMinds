@@ -60,53 +60,49 @@ exports.getQuestion = async (req, res) => {
     res.json({
         "questions": [
             {
-                "letter": "b",
-                "question_type": "single_letter",
-                "prompt": "Identify the letter shown on the screen.",
-                "correct_answer": "b",
-                "feedback": {
-                    "correct": "Great job! You identified the letter 'b'.",
-                    "incorrect": "Oops! That’s the letter 'b'. Let's try again."
-                }
-            },
-            {
-                "task_type": "paragraph_pronunciation",
-                "difficulty_levels": {
-                    "easy": {
-                        "questions": [
-                            {
-                                "paragraph": "The cat and dog played in the sun. A bat flew nearby.",
-                                "question_type": "paragraph",
-                                "prompt": "Read this paragraph out loud:",
-                                "correct_answer": "The cat and dog played in the sun. A bat flew nearby.",
-                                "feedback": {
-                                    "correct": "Excellent job! You read the paragraph clearly.",
-                                    "incorrect": "Let's try reading this paragraph again. Take your time with each word."
-                                }
-                            }
-                        ]
+                "type": "single_letter",
+                "content": {
+                    "letter": "b",
+                    "prompt": "Identify the letter shown on the screen.",
+                    "correct_answer": "b",
+                    "feedback": {
+                        "correct": "Great job! You identified the letter 'b'.",
+                        "incorrect": "Oops! That’s the letter 'b'. Let's try again."
                     }
                 }
             },
             {
-                "id": "e1",
-                "passage_type": "comprehension",
-                "text": "Sam has a cat. The cat is red. It likes to nap in the sun. Sam pets the cat. The cat purrs.",
-                "font_size": "18px",
-                "line_spacing": "2.5",
-                "question": "What color is the cat?",
-                "options": ["Red", "Blue", "Black", "White"],
-                "correct_answer": "Red",
-                "word_count": 21,
-                "readability_score": "1.2",
-                "feedback": {
-                    "correct": "Great job! The cat is indeed red.",
-                    "incorrect": "Let's try again. Look for the color word in the story."
-                },
-                "accommodations": {
-                    "text_display": "OpenDyslexic font",
-                    "background_color": "#F8F4E9",
-                    "word_spacing": "1.5em"
+                "type": "paragraph_pronunciation",
+                "content": {
+                    "paragraph": "The cat and dog played in the sun. A bat flew nearby.",
+                    "prompt": "Read this paragraph out loud:",
+                    "correct_answer": "The cat and dog played in the sun. A bat flew nearby.",
+                    "feedback": {
+                        "correct": "Excellent job! You read the paragraph clearly.",
+                        "incorrect": "Let's try reading this paragraph again. Take your time with each word."
+                    }
+                }
+            },
+            {
+                "type": "comprehension",
+                "content": {
+                    "text": "Sam has a cat. The cat is red. It likes to nap in the sun. Sam pets the cat. The cat purrs.",
+                    "font_size": "18px",
+                    "line_spacing": "2.5",
+                    "question": "What color is the cat?",
+                    "options": ["Red", "Blue", "Black", "White"],
+                    "correct_answer": "Red",
+                    "word_count": 21,
+                    "readability_score": "1.2",
+                    "feedback": {
+                        "correct": "Great job! The cat is indeed red.",
+                        "incorrect": "Let's try again. Look for the color word in the story."
+                    },
+                    "accommodations": {
+                        "text_display": "OpenDyslexic font",
+                        "background_color": "#F8F4E9",
+                        "word_spacing": "1.5em"
+                    }
                 }
             }
         ]
