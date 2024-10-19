@@ -57,14 +57,27 @@ def levenshtein_distance(word1, word2):
 
 def word_check(input_text, expected_text):
     dist = levenshtein_distance(input_text, expected_text)
-    return 1 - dist / max(len(input_text), len(expected_text))
+    accuracy =  1 - dist / max(len(input_text), len(expected_text))
+    return accuracy if accuracy > 0.5 else 0
 
 
 def sentence_check(input_text, expected_text):
-    pass
+    s1 = input_text.split()
+    s2 = expected_text.split()
 
+    X = sum(word_check(a, b) for a, b in zip(s1, s2))
+    return X / max(len(s1), len(s2))
 
-def main(image_path):
+"""---------------------"""
+
+function_map = {0: lambda x, y: letter_check(x, y),
+                1: lambda x, y: word_check(x, y),
+                2: lambda x, y: sentence_check(x, y)
+                }
+
+def main(image_path, expected_text):
+    option = int(input('Select the type of question:'))
+
     letter = input('Enter the text:')
     extracted_text = extract_handwriting(image_path)
     final_text = preprocess_text(extracted_text)
@@ -72,7 +85,6 @@ def main(image_path):
 
     print("Extracted Handwriting Text:\n", final_text)
     return final_text
-
 
 """---------------------"""
 
