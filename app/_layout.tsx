@@ -27,7 +27,7 @@ export default function RootLayout() {
     <Provider store={store}>
       <Stack
         screenOptions={{ headerShown: false }}
-        initialRouteName="reading/comprehension"
+        initialRouteName="reading/word"
       >
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>

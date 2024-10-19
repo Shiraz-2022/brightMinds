@@ -11,7 +11,7 @@ import { startTimer } from "@/redux/slices/micSlice";
 import { AppDispatch } from "@/redux/store";
 
 //components
-// import AudioBox from "./Audio";
+import AudioBox from "./Audio";
 
 //constants
 import { imagePath } from "@/constants/ImagePath";
@@ -37,7 +37,7 @@ export default function Mic() {
   const handleMicOff = () => {
     dispatch(toggleMic());
     stopRecording();
-    storeRecording();
+    // storeRecording();
   };
 
   if (!permissionResponse) {
@@ -70,19 +70,20 @@ export default function Mic() {
     console.log("Recording stopped and stored at", uri);
   };
 
-  const storeRecording = async () => {
-    if (recordingUri) {
-      try {
-        const fileName = `recording_${Date.now()}.mp3`;
-        const newPath = `${RNFS.DocumentDirectoryPath}/${fileName}`;
+  // const storeRecording = async () => {
+  //   if (recordingUri) {
+  //     try {
+  //       const fileName = `recording_${Date.now()}.mp3`;
+  //       const newPath = `${RNFS.DocumentDirectoryPath}/${fileName}`;
 
-        await RNFS.moveFile(recordingUri!, newPath);
-        console.log("Recording saved at:", newPath);
-      } catch (err) {
-        console.error("Error saving recording:", err);
-      }
-    }
-  };
+  //       await RNFS.moveFile(recordingUri!, newPath);
+  //       console.log("Recording saved at:", newPath);
+  //     } catch (err) {
+  //       console.error("Error saving recording:", err);
+  //     }
+  //   }
+  // };
+
   return (
     <View className="mx-auto">
       <Pressable
@@ -107,7 +108,7 @@ export default function Mic() {
       )}
       {recordingUri && (
         <View className="mt-5" key={recordingUri}>
-          {/* <AudioBox filePath={recordingUri} row internal /> */}
+          <AudioBox filePath={recordingUri} row internal />
         </View>
       )}
     </View>

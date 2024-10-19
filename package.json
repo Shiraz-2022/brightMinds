@@ -11,6 +11,7 @@
     "test": "jest --watchAll",
     "lint": "expo lint"
   },
+ "proxy": "http://localhost:3000",
   "jest": {
     "preset": "jest-expo"
   },

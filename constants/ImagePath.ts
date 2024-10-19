@@ -34,4 +34,6 @@ export const imagePath = {
   edit: require("@/assets/images/edit.png"),
   gameBG: require("@/assets/images/gameBG.png"),
   celebrateAnim: require("@/assets/images/celebrateAnim.gif"),
+  loadingLight: require("@/assets/images/loaderLight.gif"),
+  loadingDark: require("@/assets/images/loaderDark.gif"),
 };

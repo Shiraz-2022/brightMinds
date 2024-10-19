@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 //state
 import { useSelector, useDispatch } from "react-redux";
-// import { selectOption, toggleOption } from "@/redux/slices/optionSlice";
+import { selectOption, toggleOption } from "@/redux/slices/optionSlice";
 
 interface OpacityBoxProps {
   text: string;
@@ -16,14 +16,14 @@ export default function OpacityBox(props: OpacityBoxProps) {
   const [isSelected, setIsSelected] = useState(false);
 
   const dispatch = useDispatch();
-  //   const isOptionSelected = useSelector(selectOption);
+  const isOptionSelected = useSelector(selectOption);
 
   const handleOptionSelect = () => {
-    // if (isOptionSelected && !isSelected) {
-    //   return;
-    // }
-    // setIsSelected(!isSelected);
-    // // dispatch(toggleOption());
+    if (isOptionSelected && !isSelected) {
+      return;
+    }
+    setIsSelected(!isSelected);
+    dispatch(toggleOption());
   };
 
   return (
