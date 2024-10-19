@@ -72,9 +72,9 @@ read_type_map = {'Letter Writing': 'W1', 'Word Writing': 'W2', 'Sentence Writing
 # Function to load the model and predict
 def predict_new_wmastery(new_data):
     # Load the saved model
-    loaded_model = keras.models.load_model('C:\\Users\\LENOVO\\OneDrive\\Desktop\\brightMinds\\ML\\Models\\mastery_model_writing.h5')
+    loaded_model = keras.models.load_model('D:\\Sample Projects\\brightMinds\\ML\\Models\\mastery_model_writing.h5')
     # Load the saved ColumnTransformer
-    loaded_ct = joblib.load('C:\\Users\\LENOVO\\OneDrive\\Desktop\\brightMinds\\ML\\Models\\column_transformer_writing.pkl')
+    loaded_ct = joblib.load('D:\\Sample Projects\\brightMinds\\ML\\Models\\column_transformer_writing.pkl')
 
     # Convert new data to DataFrame
     input_df = pd.DataFrame(new_data)
@@ -97,7 +97,7 @@ def predict_new_wmastery(new_data):
 # Step 9: Prepare input data for prediction
 new_data = {
     'Age': [10],
-    'Topic': ['Passage Comprehension'],  # Example topic
+    'Topic': ['Letter Writing'],  # Example topic
     'Difficulty': [2],  # Example difficulty
     'Accuracy': [0.25],  # Example accuracy
     'Number of Questions': [5],  # Example number of questions
