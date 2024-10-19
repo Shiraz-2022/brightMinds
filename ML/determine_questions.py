@@ -21,19 +21,19 @@ def determine_questions_per_topic(mastery_scores):
 
     return questions_per_topic
 
-# # Example of a mastery scores dictionary
-# mastery_scores_example = {
-#     'Letter Reading': 0.35,
-#     'Word Reading': 0.65,
-#     'Short Passage Reading': 0.80,
-#     'Passage Comprehension': 0.50,
-#     'Noun Classification': 0.70
-# }
+# Example of a mastery scores dictionary
+mastery_scores_example = {
+    'Letter Reading': 0.35,
+    'Word Reading': 0.65,
+    'Short Passage Reading': 0.80,
+    'Passage Comprehension': 0.50,
+    'Noun Classification': 0.70
+}
 
-# # Get number of questions per topic based on mastery levels
-# questions_distribution = determine_questions_per_topic(mastery_scores_example)
+# Get number of questions per topic based on mastery levels
+questions_distribution = determine_questions_per_topic(mastery_scores_example)
 
-# # Display the distribution
-# print("Questions Distribution Based on Mastery Scores:")
-# for topic, num_questions in questions_distribution.items():
-#     print(f"{topic}: Level 1: {num_questions['Level 1']} questions, Level 2: {num_questions['Level 2']} questions, Level 3: {num_questions['Level 3']} questions")
+# Display the distribution
+print("Questions Distribution Based on Mastery Scores:")
+for topic, num_questions in questions_distribution.items():
+    print(f"{topic}: Level 1: {num_questions['Level 1']} questions, Level 2: {num_questions['Level 2']} questions, Level 3: {num_questions['Level 3']} questions")
