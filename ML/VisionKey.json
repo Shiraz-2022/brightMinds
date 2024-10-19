@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "texttospeechdemo-438717",
+    "private_key_id": "958d4087f36b08aabb9b656279da1169d44dd671",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDf5Gs9HkKm3X+4\nIjZZNl77dQC8dKhlBokPUtZUC1XfZo7aEOLRYCwy9rnx/Q8rt/AXAMBrenHKb14A\nay2gu8I4FphhBo4RIY9yqEQSMKZ/yvykYfvwZB4CfSx6jV+D/DHwb/9LsXXahl3+\n7oV5YsqgAVEfghefnFUc22lTAxzjok5HAQaZN3F+Mq83CVJ51a8QXzEVcMQRh6PN\ng2j/C3UeOaHgZCqzSaq5eYebVr9DEdmG97AEcMtEaK3EkVe+AjEfiFaGShoZoNBI\nyB13N1VnBPjsilCWNmsGrzqaSQgrdhLSdGJgydMpHoyebIsJtDNHy62LCrdTchRc\n7izEuBnzAgMBAAECggEAOAbhDxpTc45aN6nYD9sbSbGtzXsj6KQKCFuiZsWvZ4gy\nlz9Cg0KdzOMRBQ1ejoIpApidjkfF0fKsg05OzLovj/mXiDArvP249+hDoImsIK6b\nKkea1D05hUXtq31VOaISnShpqnduFpEpVHI71HR0YDX0Jv5XCwoEAoSlhrBwukWb\nmeXyX9GdgxBn8owi28+frX/4mKEDOHX8ZmM5xta9xYzo4419vSeeHYAANcliNuPj\n9eN3efHhpH+ecvc4vkYxpmOh9ul+N+vGU1ez0rgxZK9H4MgAppHlrUJTeR0wpWKD\nBZVV/3nGeU+5h7V+AV4R4hEurPvELv1+C3omrsR0AQKBgQDzvNx0MTT3fpgmyQSN\nzsHMi3qVVf1BX8LD8HoHUrhPJu0loKHBRf5qdWZstiWQ+9XbkdI14+MtUziZgC8J\nCmfGlV0lxA1jZgy9jUqWHyoPr5hhu6r8KNd2QkRLfOnpEqPimFUFb0QupAdhxhlc\nYe4+S+TT6Jpq/9r8lpnfEEKMEwKBgQDrJ/bsul3tz+7HUntRaBqy3FAoed54jmjj\naqd5fhyhJ1XALO2ZdrN5IWNQAMPpl0+NqhqHZ5ZtY85g5uL/sV85pA+WPq/Faj5v\nJ+pPfFQjjHSi7bCaYZe1l5YhYwsNEwcBZXMZrxcoV8my2JcG1koG9tvZadSukAFJ\nFh+SP6Y2oQKBgQCTjgM8CEoThr0fxdQO8VtbtBjK7Vq7R/jF3ABUDJztthgdDmi+\nc9w4oMgYChEl+3+VRGspGsP+PYJnUzWmWHlIvEW+xjiAs1gFLNM5nLY+9sPebtlt\nfGAsBKQJux50bkdut1/JQXnabozVgTL7PYIYjqOCMi/BlREClz2hz9sppwKBgG9H\ncTUjGDHidQdDw/GJByFe2lvdF+cK1R3RKcF3aUrll1GisSkvH80RfLKuOgd/P/k0\n5urunSPU2CPI/uCq6foX5fxeW8Va+oKVa+8DUbmkzMkRG8Jirm0Td8sC2IbuWyFR\nBb/AuH+x01Pb5NQqccuL5AulZizZHpKccoI9toUhAoGBAMemq5gzF4x6spKNffFt\n/PPHQieiOqJaY+kBW1qrD9qN/OlRAhBDA5N29bJavrzhMrN8eNJCYyzBFPQgBCSu\nqCe0CviiAutYRSVurU4F40UZVFqhzNa6DV0Oi8/2aNeJ2Uf6kXyT5CILQPbU3FJR\nNnRei/qgoRSHvY/Nu/7Vc4u2\n-----END PRIVATE KEY-----\n",
+    "client_email": "handwritingcheck@texttospeechdemo-438717.iam.gserviceaccount.com",
+    "client_id": "107365703500641180014",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/handwritingcheck%40texttospeechdemo-438717.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
