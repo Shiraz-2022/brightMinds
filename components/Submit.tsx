@@ -49,13 +49,13 @@ export default function Submit({
     }
   };
 
-  // const handleSubmit = () => {
-  //   setCelebrate(true);
-  //   setTimeout(() => {
-  //     setCelebrate(false);
-  //     // Navigate to the next screen or perform any other action after submission
-  //   }, 3000);
-  // };
+  const handleSubmit = () => {
+    setCelebrate(true);
+    setTimeout(() => {
+      setCelebrate(false);
+      link && router.navigate(link);
+    }, 3000);
+  };
 
   return (
     <View className="flex flex-row justify-between items-center mt-auto">
@@ -63,7 +63,7 @@ export default function Submit({
         <Image source={imagePath.backArrow} className="w-14 h-14" />
       </Pressable>
       {!hidden && (
-        <Pressable>
+        <Pressable onPress={handleSubmit}>
           <Text className="text-darkBrown bg-lightBrown px-7 py-2 rounded-lg font-odRegular">
             Submit
           </Text>

@@ -111,6 +111,9 @@ android {
 
     namespace 'com.shiraz2023.brightMinds'
     defaultConfig {
+// @generated begin react-native-auth0-manifest-placeholder - expo prebuild (DO NOT MODIFY) sync-8c1ae8ec3cd90602199d493870789f5db84f2bf5
+manifestPlaceholders = [auth0Domain: "dev-qsvea7sk7qwekoww.us.auth0.com", auth0Scheme: "com.shiraz2023.brightMinds.auth0"]
+// @generated end react-native-auth0-manifest-placeholder
         applicationId 'com.shiraz2023.brightMinds'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion

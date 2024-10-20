@@ -8,8 +8,8 @@ interface LoaderProps {
 export default function Loader(props: LoaderProps) {
   const { light } = props;
   return (
-    <Modal animationType="fade" transparent>
-      <View className="m-auto bg-darkBrown/40">
+    <Modal animationType="fade" transparent className="">
+      <View className="m-auto bg-darkBrown/40 h-full w-full">
         <Image
           source={light ? imagePath.loadingLight : imagePath.loadingDark}
           className="m-auto w-14 h-14"

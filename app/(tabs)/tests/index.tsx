@@ -60,18 +60,16 @@ export default function index() {
       <View className="my-auto">
         <View className="mb-5">
           <WideTwoButton
-            // link="/reading/outLoud"
+            link="/reading/outLoud"
             text="Reading"
             image={imagePath.reading}
             bgColor
             textColor
-            press
-            apiFunction={getReadingDataCp}
           />
         </View>
         <View className="mb-5">
           <WideTwoButton
-            link="/"
+            link="/writing/ListenAndWrite"
             text="Writing"
             image={imagePath.writing}
             bgColor
@@ -80,7 +78,7 @@ export default function index() {
         </View>
         <View className="mb-5">
           <WideTwoButton
-            link="/"
+            link="/image/IdentifyImage"
             text="Image"
             image={imagePath.picture}
             bgColor

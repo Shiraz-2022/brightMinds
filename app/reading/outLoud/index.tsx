@@ -24,16 +24,16 @@ import {
 
 export default function OutLoud() {
   const isMicOn = useSelector(selectMic);
-  const {
-    routes: routesParam,
-    current,
-    data: dataParam,
-  } = useLocalSearchParams();
-  const routes = JSON.parse(routesParam as string);
-  const data: ReadingQuestionData = JSON.parse(dataParam as string);
+  // const {
+  //   routes: routesParam,
+  //   current,
+  //   data: dataParam,
+  // } = useLocalSearchParams();
+  // const routes = JSON.parse(routesParam as string);
+  // const data: ReadingQuestionData = JSON.parse(dataParam as string);
 
-  const paraData: ParagraphPronunciationContent =
-    data.questions[Number(current)].content;
+  // const paraData: ParagraphPronunciationContent =
+  //   data.questions[Number(current)].content;
 
   return (
     <View className="bg-darkBrown h-full w-full py-16 px-10">
@@ -44,14 +44,16 @@ export default function OutLoud() {
         Read the passage out loud
       </Text>
       <TextBox
-        text={paraData.paragraph}
+        text=" The cat is black and it is running fast. The kid ran behind the cat and
+        fell down on his knee."
         highlight={["hey", "Vestibulum", "Lorem"]}
       />
       <View className="mx-auto my-10">
         <Mic />
       </View>
       {!isMicOn && (
-        <Submit routes={routes} current={Number(current)} data={data} />
+        // <Submit routes={routes} current={Number(current)} data={data} />
+        <Submit link="/reading/silent" />
       )}
     </View>
   );

@@ -1,18 +1,38 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Pressable } from "react-native";
 
 //constants
 import { imagePath } from "@/constants/ImagePath";
+import { router } from "expo-router";
 
 export default function Learning1() {
   return (
     <View className="my-20">
       <View className="flex flex-row">
         <View>
-          <Image source={imagePath.starStep} className="ml-28 w-20 h-20 mb-5" />
-          <Image source={imagePath.starStep} className="ml-16 w-20 h-20 mb-5" />
-          <Image source={imagePath.castle} className="ml-10 w-24 h-24 mb-5" />
-          <Image source={imagePath.starStep} className="ml-16 w-20 h-20 mb-5" />
-          <Image source={imagePath.starStep} className="ml-28 w-20 h-20" />
+          <Pressable onPress={() => router.navigate("/")}>
+            <Image
+              source={imagePath.starStep}
+              className="ml-28 w-20 h-20 mb-5"
+            />
+          </Pressable>
+          <Pressable onPress={() => router.navigate("/")}>
+            <Image
+              source={imagePath.starStep}
+              className="ml-16 w-20 h-20 mb-5"
+            />
+          </Pressable>
+          <Pressable onPress={() => router.navigate("/")}>
+            <Image source={imagePath.castle} className="ml-10 w-24 h-24 mb-5" />
+          </Pressable>
+          <Pressable onPress={() => router.navigate("/")}>
+            <Image
+              source={imagePath.starStep}
+              className="ml-16 w-20 h-20 mb-5"
+            />
+          </Pressable>
+          <Pressable onPress={() => router.navigate("/")}>
+            <Image source={imagePath.starStep} className="ml-28 w-20 h-20" />
+          </Pressable>
         </View>
         <Image source={imagePath.girlLeft} className="my-auto" />
       </View>

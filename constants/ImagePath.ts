@@ -36,4 +36,13 @@ export const imagePath = {
   celebrateAnim: require("@/assets/images/celebrateAnim.gif"),
   loadingLight: require("@/assets/images/loaderLight.gif"),
   loadingDark: require("@/assets/images/loaderDark.gif"),
+  progress3: require("@/assets/images/progress3.png"),
+  ai: require("@/assets/images/ai.png"),
+  home2: require("@/assets/images/home2.png"),
+  progress2: require("@/assets/images/progress2.png"),
+  chat2: require("@/assets/images/chat2.png"),
+  reading2: require("@/assets/images/reading2.png"),
+  writing2: require("@/assets/images/writing2.png"),
+  picture2: require("@/assets/images/picture2.png"),
+  sent: require("@/assets/images/sent.png"),
 };

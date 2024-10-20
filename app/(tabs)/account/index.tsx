@@ -1,5 +1,6 @@
 import { View, Text, Image, Pressable, TextInput } from "react-native";
 import React, { useState } from "react";
+import { Link } from "expo-router";
 
 //constants
 import { imagePath } from "@/constants/ImagePath";
@@ -81,6 +82,12 @@ export default function index() {
           </View>
         </View>
       </View>
+      <Link
+        href="/ExchangeCoins"
+        className="underline text-lightBrown font-odRegular text-lg ml-10"
+      >
+        Exchange Coins
+      </Link>
     </View>
   );
 }

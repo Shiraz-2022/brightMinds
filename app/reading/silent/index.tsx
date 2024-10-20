@@ -20,18 +20,18 @@ import {
 } from "@/services/getReadingData";
 
 export default function OutLoud() {
-  const {
-    routes: routesParam,
-    current,
-    data: dataParam,
-  } = useLocalSearchParams();
-  const routes = JSON.parse(routesParam as string);
-  const data: ReadingQuestionData = JSON.parse(dataParam as string);
+  // const {
+  //   routes: routesParam,
+  //   current,
+  //   data: dataParam,
+  // } = useLocalSearchParams();
+  // const routes = JSON.parse(routesParam as string);
+  // const data: ReadingQuestionData = JSON.parse(dataParam as string);
 
-  console.log(data);
+  // console.log(data);
 
-  const compData: ComprehensionContent =
-    data.questions[Number(current)].content;
+  // const compData: ComprehensionContent =
+  //   data.questions[Number(current)].content;
 
   return (
     <View className="bg-darkBrown h-full w-full py-16 px-10">
@@ -39,15 +39,15 @@ export default function OutLoud() {
       <LeftStripe rotate light />
       <RightStripe rotate light />
       <Text className="text-lightBrown text-lg font-odBold mb-10">
-        {compData.question}
+        Read the passage carefully and answer the next comprehension question.
       </Text>
-      <TextBox text={compData.text} />
+      <TextBox text="Tom has a red cat. The cat likes to sleep." />
       <Submit
-        routes={routes}
-        current={Number(current)}
+        // routes={routes}
+        // current={Number(current)}
         hidden
         link="/reading/comprehension"
-        data={data}
+        // data={data}
       />
     </View>
   );

@@ -7,6 +7,7 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store";
+import { useAuth0, Auth0Provider } from "react-native-auth0";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -24,13 +25,18 @@ export default function RootLayout() {
   }
 
   return (
-    <Provider store={store}>
-      <Stack
-        screenOptions={{ headerShown: false }}
-        initialRouteName="reading/word"
-      >
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      </Stack>
-    </Provider>
+    <Auth0Provider
+      domain={"dev-qsvea7sk7qwekoww.us.auth0.com"}
+      clientId={"IqpREnrpRjydrB90p3uTSCR493r72mMp"}
+    >
+      <Provider store={store}>
+        <Stack
+          screenOptions={{ headerShown: false }}
+          initialRouteName="/parent"
+        >
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        </Stack>
+      </Provider>
+    </Auth0Provider>
   );
 }

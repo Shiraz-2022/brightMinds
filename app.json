@@ -27,7 +27,13 @@
     "plugins": [
       "expo-router",
       "expo-font",
-      "expo-camera"
+      "expo-camera",
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-qsvea7sk7qwekoww.us.auth0.com"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

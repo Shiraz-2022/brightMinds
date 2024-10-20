@@ -16,14 +16,14 @@ import {
 } from "@/services/getReadingData";
 
 export default function Comprehension() {
-  const {
-    routes: routesParam,
-    current,
-    data: dataParams,
-  } = useLocalSearchParams();
-  const routes = JSON.parse(routesParam as string);
-  const data: ReadingQuestionData = JSON.parse(dataParams as string);
-  const compData: ComprehensionContent = JSON.parse(dataParams as string);
+  // const {
+  //   routes: routesParam,
+  //   current,
+  //   data: dataParams,
+  // } = useLocalSearchParams();
+  // const routes = JSON.parse(routesParam as string);
+  // const data: ReadingQuestionData = JSON.parse(dataParams as string);
+  // const compData: ComprehensionContent = JSON.parse(dataParams as string);
 
   return (
     <View className="bg-darkBrown w-full h-full py-16 px-10">
@@ -34,12 +34,13 @@ export default function Comprehension() {
         Choose the right option, based on the last passage
       </Text>
       <Text className="text-lightBrown font-odRegular my-7">
-        {compData.question}
+        What does the cat like to do?
       </Text>
       <View className="flex">
-        {compData.options?.map((option) => (
-          <OpacityBox text={option} option />
-        ))}
+        <OpacityBox text="To sleep" option />
+        <OpacityBox text="To eat" option />
+        <OpacityBox text="To play" option />
+        <OpacityBox text="To run" option />
       </View>
       <Submit link="/(tabs)/tests" />
     </View>

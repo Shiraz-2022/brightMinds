@@ -15,11 +15,6 @@ export const tests = [
   {
     text: "Image",
     icon: imagePath.picture,
-    link: "/" as Href<string | object>,
-  },
-  {
-    text: "Audio",
-    icon: imagePath.headset,
     link: "/parent" as Href<string | object>,
   },
 ];
