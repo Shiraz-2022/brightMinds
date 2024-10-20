@@ -18,6 +18,7 @@ app.use(express.json());
 connectDB();
 
 app.use("/students", studentRoute);
+app.use("/parents", parentRoute);
 
 app.use("/adaptive-learning", adaptiveLearningSystem.app);
 app.use("/testData", testDataRoute);
