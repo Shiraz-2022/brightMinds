@@ -1,0 +1,209 @@
+{
+    "W1": {
+        "id": "W1",
+        "level_1": [
+            {
+                "question": "Write the letter 'A' in uppercase and lowercase.",
+                "correct_answer": "A, a",
+                "level": 1
+            },
+            {
+                "question": "Write the letter 'B' in uppercase and lowercase.",
+                "correct_answer": "B, b",
+                "level": 1
+            },
+            {
+                "question": "Write the letter 'C' in uppercase and lowercase.",
+                "correct_answer": "C, c",
+                "level": 1
+            },
+            {
+                "question": "Write the letter 'D' in uppercase and lowercase.",
+                "correct_answer": "D, d",
+                "level": 1
+            }
+        ],
+        "level_2": [
+            {
+                "question": "Write the letters 'E' and 'F' in uppercase and lowercase.",
+                "correct_answer": "E, e, F, f",
+                "level": 2
+            },
+            {
+                "question": "Write the letters 'G' and 'H' in uppercase and lowercase.",
+                "correct_answer": "G, g, H, h",
+                "level": 2
+            },
+            {
+                "question": "Write the letters 'I' and 'J' in uppercase and lowercase.",
+                "correct_answer": "I, i, J, j",
+                "level": 2
+            },
+            {
+                "question": "Write the letters 'K' and 'L' in uppercase and lowercase.",
+                "correct_answer": "K, k, L, l",
+                "level": 2
+            }
+        ],
+        "level_3": [
+            {
+                "question": "Write the first ten letters of the alphabet in uppercase and lowercase.",
+                "correct_answer": "A, a, B, b, C, c, D, d, E, e, F, f, G, g, H, h, I, i, J, j",
+                "level": 3
+            },
+            {
+                "question": "Write the letters 'M' and 'N' in uppercase and lowercase.",
+                "correct_answer": "M, m, N, n",
+                "level": 3
+            },
+            {
+                "question": "Write the letters 'O' and 'P' in uppercase and lowercase.",
+                "correct_answer": "O, o, P, p",
+                "level": 3
+            },
+            {
+                "question": "Write the letters 'Q' and 'R' in uppercase and lowercase.",
+                "correct_answer": "Q, q, R, r",
+                "level": 3
+            }
+        ]
+    },
+    "W2": {
+        "id": "W2",
+        "level_1": [
+            {
+                "question": "Write the word 'bat' using the letters you have learned.",
+                "correct_answer": "bat",
+                "level": 1
+            },
+            {
+                "question": "Write the word 'cat.'",
+                "correct_answer": "cat",
+                "level": 1
+            },
+            {
+                "question": "Write the word 'dog.'",
+                "correct_answer": "dog",
+                "level": 1
+            },
+            {
+                "question": "Write the word 'pen.'",
+                "correct_answer": "pen",
+                "level": 1
+            }
+        ],
+        "level_2": [
+            {
+                "question": "Write the words 'apple' and 'orange.'",
+                "correct_answer": "apple, orange",
+                "level": 2
+            },
+            {
+                "question": "Write the words 'table' and 'chair.'",
+                "correct_answer": "table, chair",
+                "level": 2
+            },
+            {
+                "question": "Write the words 'bird' and 'fish.'",
+                "correct_answer": "bird, fish",
+                "level": 2
+            },
+            {
+                "question": "Write the words 'book' and 'pen.'",
+                "correct_answer": "book, pen",
+                "level": 2
+            }
+        ],
+        "level_3": [
+            {
+                "question": "Write the words 'banana,' 'grape,' and 'kiwi.'",
+                "correct_answer": "banana, grape, kiwi",
+                "level": 3
+            },
+            {
+                "question": "Write the words 'computer,' 'tablet,' and 'phone.'",
+                "correct_answer": "computer, tablet, phone",
+                "level": 3
+            },
+            {
+                "question": "Write the words 'elephant,' 'giraffe,' and 'hippopotamus.'",
+                "correct_answer": "elephant, giraffe, hippopotamus",
+                "level": 3
+            },
+            {
+                "question": "Write the words 'adventure,' 'imagination,' and 'creativity.'",
+                "correct_answer": "adventure, imagination, creativity",
+                "level": 3
+            }
+        ]
+    },
+    "W3": {
+        "id": "W3",
+        "level_1": [
+            {
+                "question": "Write a sentence using the words 'I' and 'am.'",
+                "correct_answer": "I am happy.",
+                "level": 1
+            },
+            {
+                "question": "Write a sentence using the words 'cat' and 'runs.'",
+                "correct_answer": "The cat runs fast.",
+                "level": 1
+            },
+            {
+                "question": "Write a sentence using 'dog' and 'barks.'",
+                "correct_answer": "The dog barks loudly.",
+                "level": 1
+            },
+            {
+                "question": "Write a sentence using 'I' and 'like.'",
+                "correct_answer": "I like to play.",
+                "level": 1
+            }
+        ],
+        "level_2": [
+            {
+                "question": "Write a sentence using 'The cat' and 'sleeps.'",
+                "correct_answer": "The cat sleeps on the bed.",
+                "level": 2
+            },
+            {
+                "question": "Write a sentence using 'My brother' and 'plays.'",
+                "correct_answer": "My brother plays soccer after school.",
+                "level": 2
+            },
+            {
+                "question": "Write a sentence using 'The dog' and 'chases.'",
+                "correct_answer": "The dog chases the ball.",
+                "level": 2
+            },
+            {
+                "question": "Write a sentence using 'I' and 'love.'",
+                "correct_answer": "I love reading books at night.",
+                "level": 2
+            }
+        ],
+        "level_3": [
+            {
+                "question": "Write a sentence using 'Yesterday' and 'went.'",
+                "correct_answer": "Yesterday, I went to the park with my friends.",
+                "level": 3
+            },
+            {
+                "question": "Write a sentence using 'The children' and 'play.'",
+                "correct_answer": "The children play in the garden every afternoon.",
+                "level": 3
+            },
+            {
+                "question": "Write a sentence using 'My mom' and 'cooks.'",
+                "correct_answer": "My mom cooks delicious meals for the family every Sunday.",
+                "level": 3
+            },
+            {
+                "question": "Write a sentence using 'We' and 'went.'",
+                "correct_answer": "We went on a trip to the beach last weekend.",
+                "level": 3
+            }
+        ]
+    }
+}
