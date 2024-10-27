@@ -1,50 +1,23 @@
-# Welcome to your Expo app 👋
+# Adaptive Learning Path and Detection App for Dyslexic Children
+### Inspiration
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+The motivation behind this project came from a strong desire to make education more inclusive for children with dyslexia. Dyslexia is a common learning difficulty that can affect children in different ways, from struggling with reading to writing and processing information. The lack of personalized learning tools that can adapt to the specific needs of dyslexic children inspired me to create an app that not only detects the type of dyslexia but also tailors learning paths to each child’s ability.
 
-## Get started
+## How I Built the Project
+### Technologies Used
 
-1. Install dependencies
+#### React Native:
+For building the mobile app, providing a user-friendly interface that allows children to interact with the learning modules.
+#### Machine Learning Models: 
+A combination of supervised learning models was used to classify dyslexic types (surface, phonological, rapid naming, double deficit) based on test scores and survey data.
+#### Data Analytics: 
+I generated both real and synthetic datasets to simulate various learning scenarios and dyslexic characteristics. Features such as reading speed, memory, visual and auditory discrimination were essential for personalizing the learning experience.
 
-   ```bash
-   npm install
-   ```
+## Main Features
+#### Dyslexia Detection: 
+The app begins with an assessment phase, which evaluates the child’s current reading and writing abilities and classifies the type of dyslexia, if any.
+Adaptive Learning Path: Based on the assessment results, the app generates a personalized learning path. Topics are broken down into steps, and each step includes 10-15 questions of varying difficulty.
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+#### Parent/Guardian Dashboard: 
+A separate dashboard for guardians allows them to monitor their child’s progress and receive helpful insights via a chatbot. The chatbot is fine-tuned to answer specific questions about dyslexia and the child's performance.
+Mastery-Based Question Distribution: The learning path adapts in real time by redistributing questions based on the child’s mastery level, helping them focus on weaker areas.
