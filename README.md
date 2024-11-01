@@ -9,7 +9,7 @@ The motivation behind this project came from a strong desire to make education m
 #### React Native:
 For building the mobile app, providing a user-friendly interface that allows children to interact with the learning modules.
 #### Machine Learning Models: 
-A combination of supervised learning models was used to classify dyslexic types (surface, phonological, rapid naming, double deficit) based on test scores and survey data.
+Various neural networks were used to classify dyslexic people based on test scores.
 #### Data Analytics: 
 I generated both real and synthetic datasets to simulate various learning scenarios and dyslexic characteristics. Features such as reading speed, memory, visual and auditory discrimination were essential for personalizing the learning experience.
 
